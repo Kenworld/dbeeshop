@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dee Bee Baby Shop</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Vendor CSS (Icon Font) -->
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/pe-icon-7-stroke.min.css" />
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/aos.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.min.css" />
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <div class="header section">
+        <!-- Header Top Start -->
+        <div class="header-top bg-primary">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Header Top Message Start -->
+                    <div class="col-12">
+                        <div class="header-top-msg-wrapper text-center">
+                            <p class="header-top-message text-center">
+                                Up to 50% off for <strong>Christmas</strong> Collections
+                                <a href="shop.html" class="btn btn-hover-dark btn-secondary">Shop Now</a>
+                            </p>
+                            <div class="header-top-close-btn">
+                                <button class="top-close-btn">
+                                    <i class="pe-7s-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Header Top Message End -->
+                </div>
+            </div>
+        </div>
+        <!-- Header Top End -->
+
+        <!-- Header Bottom Start -->
+        <div class="header-bottom">
+            <div class="header-sticky">
+                <div class="container">
+                    <div class="row align-items-center position-relative">
+                        <!-- Header Logo Start -->
+                        <div class="col-md-6 col-lg-3 col-xl-2 col-6">
+                            <div class="header-logo">
+                                <a href="index.html"><img src="assets/images/logo/logo.webp" alt="Site Logo" /></a>
+                            </div>
+                        </div>
+                        <!-- Header Logo End -->
+                        <!-- Header Menu Start -->
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="main-menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="brands.html">Shop By Brand</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Header Menu End -->
+                        <!-- Header Action Start -->
+                        <div class="col-md-6 col-lg-3 col-xl-4 col-6 justify-content-end">
+                            <div class="header-actions">
+                                <a
+                                    href="javascript:void(0)"
+                                    class="header-action-btn header-action-btn-search d-none d-lg-block"><i class="pe-7s-search"></i></a>
+
+                                <div class="dropdown-user d-none d-lg-block">
+                                    <a href="javascript:void(0)" class="header-action-btn"><i class="pe-7s-user"></i></a>
+                                    <ul class="dropdown-menu-user">
+                                        <li class="notLoggedIn"><a class="dropdown-item" href="/login.html">Sign in</a></li>
+                                        <li class="notLoggedIn">
+                                            <a class="dropdown-item" href="/signup.html">Create Account</a>
+                                        </li>
+                                        <li class="isLoggedIn">
+                                            <a class="dropdown-item" href="/account.html">My Account</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a
+                                    href="wishlist.html"
+                                    class="header-action-btn header-action-btn-wishlist">
+                                    <i class="pe-7s-like"></i>
+                                    <span class="header-action-num">10</span>
+                                </a>
+                                <a
+                                    href="javascript:void(0)"
+                                    class="header-action-btn header-action-btn-cart">
+                                    <i class="pe-7s-cart"></i>
+                                    <span class="header-action-num" id="cartCount"></span>
+                                </a>
+                                <!-- Mobile Menu Hambarger Action Button Start -->
+                                <a
+                                    href="javascript:void(0)"
+                                    class="header-action-btn header-action-btn-menu d-lg-none d-md-block">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                                <!-- Mobile Menu Hambarger Action Button End -->
+                            </div>
+                        </div>
+                        <!-- Header Action End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Bottom Ends -->
+
+        <!-- Offcanvas Search Start -->
+        <div class="offcanvas-search">
+            <div class="offcanvas-search-inner">
+                <!-- Button Close Start -->
+                <div class="offcanvas-btn-close">
+                    <i class="pe-7s-close"></i>
+                </div>
+                <!-- Button Close End -->
+
+                <!-- Offcanvas Search Form Start -->
+                <form class="offcanvas-search-form" action="#">
+                    <input
+                        type="text"
+                        placeholder="Search Product..."
+                        class="offcanvas-search-input" />
+                </form>
+                <!-- Offcanvas Search Form End -->
+            </div>
+        </div>
+        <!-- Offcanvas Search End -->
+        <!-- Cart Offcanvas Start -->
+        <div class="cart-offcanvas-wrapper">
+            <div class="offcanvas-overlay"></div>
+
+            <!-- Cart Offcanvas Inner Start -->
+            <div class="cart-offcanvas-inner">
+                <!-- Button Close Start -->
+                <div class="offcanvas-btn-close">
+                    <i class="pe-7s-close"></i>
+                </div>
+                <!-- Button Close End -->
+
+                <!-- Offcanvas Cart Content Start -->
+                <div class="offcanvas-cart-content" id="cartList">
+                    <!-- Cart items will be inserted here by displayCartItems function -->
+
+                    <!--------------------------------------------------------------------------------------------->
+                  
+                </div>
+                <!-- Offcanvas Cart Content End -->
+            </div>
+            <!-- Cart Offcanvas Inner End -->
+        </div>
+        <!-- Cart Offcanvas End -->
+
+        <!-- Toast Notification -->
+        <div aria-live="polite" aria-atomic="true" class="position-relative">
+            <div class="toast-container position-fixed top-0 end-0 p-3" id="toast-container">
+                <div id="cartToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            Added to cart!
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A Toast notification -->
+    </div>
+    <!-- Header Section End -->
+<!-- main content starts -->
+<!-- Products Grid Section -->
+<div class="section section-margin">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="title text-center mb-5">All Products</h1>
+            </div>
+        </div>
+        
+        <div class="row mb-n8">
+            
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/EVVU5L07W0-toddler-girls-puffer-jacket-.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1731424414468_3047858_1834.png?alt=media&token=47be0354-57bb-4f20-9269-0b40b4103ffd" 
+                                     alt="Toddler Girls Puffer Jacket "
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/EVVU5L07W0-toddler-girls-puffer-jacket-.html">Toddler Girls Puffer Jacket </a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 280</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/A96PV898CD-aptamil-1-first-baby-milk-powder.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1731425386649_71ZLizId0KL._AC_SL1500_.webp?alt=media&token=384e2686-bff7-4317-86ed-343a6af07c3d" 
+                                     alt="Aptamil 1 First Baby Milk Powder"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/A96PV898CD-aptamil-1-first-baby-milk-powder.html">Aptamil 1 First Baby Milk Powder</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 320</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/CFUAVACBQ5-fisher-price-panda-walker.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1730493348398_fp.jpg?alt=media&token=7715d363-3d0b-4336-b4b6-245bc72876e0" 
+                                     alt="Fisher-Price Panda Walker"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/CFUAVACBQ5-fisher-price-panda-walker.html">Fisher-Price Panda Walker</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 630</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/9L5KN93ZBE-aptamil-2-follow-on-baby-milk.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1731425790950_714hFcJgSCL._AC_SL1500_.webp?alt=media&token=cf8faecc-566f-4c40-9c24-c6bdb61c0f0d" 
+                                     alt="Aptamil 2 Follow On Baby Milk"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/9L5KN93ZBE-aptamil-2-follow-on-baby-milk.html">Aptamil 2 Follow On Baby Milk</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 320</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/O54BA3CLC2-girls-snacks-pajamas.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1731424233781_3029783_5N.webp?alt=media&token=cc1f69c9-940b-4ae7-8804-d88011f6dd18" 
+                                     alt="Girls Snacks Pajamas"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/O54BA3CLC2-girls-snacks-pajamas.html">Girls Snacks Pajamas</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 250</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/F488BZVGL6-gerber-kids-athletic-sneaker.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1730480803341_gerbershoe.jpg?alt=media&token=5723b387-d492-423f-95c0-52381a4d9c6f" 
+                                     alt="Gerber Kids Athletic Sneaker"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/F488BZVGL6-gerber-kids-athletic-sneaker.html">Gerber Kids Athletic Sneaker</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 262</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/C6XCC2PN9N-fisher-price-learn-with-me-zebra-walker.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1730492969922_fisher.jpg?alt=media&token=38753ed7-1ba0-4b39-9575-7ce87af04634" 
+                                     alt="Fisher-Price Learn with Me Zebra Walker"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/C6XCC2PN9N-fisher-price-learn-with-me-zebra-walker.html">Fisher-Price Learn with Me Zebra Walker</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 570</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/73Y8I96HTJ-hipp-organic-apple-and-pear.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1731423865147_71RxG964kdL._AC_SL1500_.webp?alt=media&token=897fc860-981f-415d-b9a6-a087052bf906" 
+                                     alt="Hipp Organic Apple and Pear"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/73Y8I96HTJ-hipp-organic-apple-and-pear.html">Hipp Organic Apple and Pear</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 28</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/S0X617LKWN-gerber-unisex-baby-pajamas-2-pack.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1730481310900_bodysuit.jpg?alt=media&token=489b5b62-d5d8-47aa-9098-dd32ee2e38c5" 
+                                     alt="Gerber Unisex Baby Pajamas 2-Pack"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/S0X617LKWN-gerber-unisex-baby-pajamas-2-pack.html">Gerber Unisex Baby Pajamas 2-Pack</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 260</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/BRZ6V1RHQI-baby-einstein-walker.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1730987641764_81ITWTmGezL._SL1500_.jpg?alt=media&token=226bc863-f8e8-4d00-a1fd-f9d4af75f10f" 
+                                     alt="Baby Einstein Walker"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/BRZ6V1RHQI-baby-einstein-walker.html">Baby Einstein Walker</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 750</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/UDUZOA7FJ4-a-d-original-diaper-rash-ointment.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1731422922979_ad.webp?alt=media&token=8b2a1a2c-76cb-49c7-b3b3-82381abf8bf1" 
+                                     alt="A+D Original Diaper Rash Ointment"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/UDUZOA7FJ4-a-d-original-diaper-rash-ointment.html">A+D Original Diaper Rash Ointment</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 17</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/4L01YR3Q4E-girls-beaded-lace-up-booties-black.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1731424904569_3049111_01.png?alt=media&token=9e1b34fc-65af-4010-a1ce-587360b02234" 
+                                     alt="Girls Beaded Lace Up Booties - black"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/4L01YR3Q4E-girls-beaded-lace-up-booties-black.html">Girls Beaded Lace Up Booties - black</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 420</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/8FC9IGSEIJ-heinz-fruity-apple-pear-custard.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1731423584124_heinze.webp?alt=media&token=3ca5174a-3577-4aa5-b407-3150bf8bc44f" 
+                                     alt="Heinz Fruity Apple & Pear Custard"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/8FC9IGSEIJ-heinz-fruity-apple-pear-custard.html">Heinz Fruity Apple & Pear Custard</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 150</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-8">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/products/53SKF95T3I-baby-girls-leopard-bodysuit-4-pack.html">
+                                <img class="primary-img" 
+                                     src="https://firebasestorage.googleapis.com/v0/b/deebee-shop.appspot.com/o/products%2Ffeatured_1731424646593_3049278_1846.webp?alt=media&token=2adcb3e1-a06b-4f41-bcc7-b62a39c775bc" 
+                                     alt="Baby Girls Leopard Bodysuit 4-Pack"
+                                     style="width: 100%; height: 200px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5 class="title">
+                                <a href="/products/53SKF95T3I-baby-girls-leopard-bodysuit-4-pack.html">Baby Girls Leopard Bodysuit 4-Pack</a>
+                            </h5>
+                            <div class="price-box">
+                                <span class="regular-price">GH₵ 300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+<!-- main content end -->
+<!-- Footer Section Start -->
+<footer class="section footer-section">
+    <!-- Footer Top Start -->
+    <div class="footer-top bg-primary section-padding">
+        <div class="container">
+            <div class="row mb-n8">
+                <div class="col-12 col-sm-6 col-lg-3 mb-8">
+                    <div class="single-footer-widget">
+                        <h1 class="widget-title">About Us</h1>
+                        <p class="desc-content">We provide you with quality products from countries like Canada,USA,UK</p>
+                        <!-- Soclial Link Start -->
+                        <div class="widget-social justify-content-start mb-n2">
+                            <a title="Facebook" href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                            <a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                            <a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+
+                        </div>
+                        <!-- Social Link End -->
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-8">
+                    <div class="single-footer-widget">
+                        <h2 class="widget-title">Contact Us</h2>
+                        <ul class="contact-links">
+                            <li><i class="pe-7s-home"></i> <span>Kumasi Santasi</span> </li>
+                            <li><i class="pe-7s-mail"></i><a href="#"> info@deebee.com</a></li>
+                            <li><i class="pe-7s-call"></i><a href="#"> +233 3456 789</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-8">
+                    <div class="single-footer-widget aos-init aos-animate">
+                        <h2 class="widget-title">Legal</h2>
+                        <ul class="widget-list">
+                            <li><a href="contact.html">Terms & Conditions</a></li>
+                            <li><a href="contact.html">Payment Methods</a></li>
+                            <li><a href="contact.html">Product Warranty</a></li>
+                            <li><a href="contact.html">Return Process</a></li>
+                            <li><a href="contact.html">Payment Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-8">
+                    <div class="single-footer-widget">
+                        <h2 class="widget-title">Signup for newsletter</h2>
+                        <div class="widget-body">
+                            <!-- Newsletter Form Start -->
+                            <div class="newsletter-form-wrap pt-1">
+                                <form id="mc-form" class="mc-form">
+                                    <input type="email" id="mc-email" class="form-control email-box mb-4" placeholder="demo@example.com" name="EMAIL">
+                                    <button id="mc-submit" class="newsletter-btn" type="submit">Subscribe</button>
+                                </form>
+                                <!-- mailchimp-alerts Start -->
+                                <div class="mailchimp-alerts text-centre">
+                                    <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                    <div class="mailchimp-success text-success"></div><!-- mailchimp-success end -->
+                                    <div class="mailchimp-error text-danger"></div><!-- mailchimp-error end -->
+                                </div>
+                                <!-- mailchimp-alerts end -->
+                            </div>
+                            <!-- Newsletter Form End -->
+                            <p class="desc-content mb-0">Join over 1,000 people who get free and fresh content delivered automatically each time we publish</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Top End -->
+
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom bg-secondary pt-4 pb-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <div class="copyright-content">
+                        <p class="mb-0">&copy; 2024 Softnage - All Rights Reserved</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom End -->
+</footer>
+<!-- Footer Section End -->
+
+
+<!-- Mobile Menu Start -->
+<div class="mobile-menu-wrapper">
+    <div class="offcanvas-overlay"></div>
+
+    <!-- Mobile Menu Inner Start -->
+    <div class="mobile-menu-inner">
+
+        <!-- Button Close Start -->
+        <div class="offcanvas-btn-close">
+            <i class="pe-7s-close"></i>
+        </div>
+        <!-- Button Close End -->
+
+        <!-- Mobile Menu Inner Wrapper Start -->
+        <div class="mobile-menu-inner-wrapper">
+            <!-- Mobile Menu Search Box Start -->
+            <div class="search-box-offcanvas">
+                <form>
+                    <input class="search-input-offcanvas" type="text" placeholder="Search product...">
+                    <button class="search-btn"><i class="pe-7s-search"></i></button>
+                </form>
+            </div>
+            <!-- Mobile Menu Search Box End -->
+
+            <!-- Mobile Menu Start -->
+            <div class="mobile-navigation">
+                <nav>
+                    <ul class="mobile-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="brands.html">Shop By Brand</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Mobile Menu End -->
+
+            <!-- Language, Currency & Link Start -->
+            <div class="offcanvas-lag-curr mb-6">
+                <div class="header-top-lan-curr-link">
+                    <div class="header-top-lan dropdown">
+                        <h4 class="title">Profile:</h4>
+                        <button class="dropdown-toggle" data-bs-toggle="dropdown">Account <i class="fa fa-angle-down"></i></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Create Account</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Account, Currency & Link End -->
+
+            <!-- Contact Links/Social Links Start -->
+            <div class="mt-auto bottom-0">
+
+                <!-- Contact Links Start -->
+                <ul class="contact-links">
+                    <li><i class="fa fa-phone"></i><a href="#"> +233 3456 789</a></li>
+                    <li><i class="fa fa-envelope-o"></i><a href="#"> info@deebee.com</a></li>
+                    <li><i class="fa fa-clock-o"></i> <span>Monday - Sunday 7:30 am - 8:00 pm</span> </li>
+                </ul>
+                <!-- Contact Links End -->
+
+                <!-- Social Widget Start -->
+                <div class="widget-social">
+                    <a title="Facebook" href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    <a title="Linkedin" href="#"><i class="fa fa-tiktok"></i></a>
+                    <a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+                    <a title="Vimeo" href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <!-- Social Widget Ende -->
+            </div>
+            <!-- Contact Links/Social Links End -->
+        </div>
+        <!-- Mobile Menu Inner Wrapper End -->
+
+    </div>
+    <!-- Mobile Menu Inner End -->
+</div>
+<!-- Mobile Menu End -->
+<script src="/assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="/assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
+<!-- Plugins JS -->
+
+<script src="/assets/js/plugins/aos.min.js"></script>
+<script src="/assets/js/plugins/jquery.ajaxchimp.min.js"></script>
+<script src="/assets/js/plugins/jquery-ui.min.js"></script>
+<script src="/assets/js/plugins/nice-select.min.js"></script>
+<script src="/assets/js/plugins/swiper-bundle.min.js"></script>
+<script src="/assets/js/plugins/countdown.min.js"></script>
+<script src="/assets/js/plugins/lightgallery-all.min.js"></script>
+<script src="/assets/js/quill.min.js"></script>
+<!--Main JS-->
+
+<script src="/dist/bundle.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+
+</html>

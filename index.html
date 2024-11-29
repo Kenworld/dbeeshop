@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dee Bee Baby Shop</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Vendor CSS (Icon Font) -->
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/pe-icon-7-stroke.min.css" />
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/aos.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.min.css" />
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <div class="header section">
+        <!-- Header Top Start -->
+        <div class="header-top bg-primary">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Header Top Message Start -->
+                    <div class="col-12">
+                        <div class="header-top-msg-wrapper text-center">
+                            <p class="header-top-message text-center">
+                                Up to 50% off for <strong>Christmas</strong> Collections
+                                <a href="shop.html" class="btn btn-hover-dark btn-secondary">Shop Now</a>
+                            </p>
+                            <div class="header-top-close-btn">
+                                <button class="top-close-btn">
+                                    <i class="pe-7s-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Header Top Message End -->
+                </div>
+            </div>
+        </div>
+        <!-- Header Top End -->
+
+        <!-- Header Bottom Start -->
+        <div class="header-bottom">
+            <div class="header-sticky">
+                <div class="container">
+                    <div class="row align-items-center position-relative">
+                        <!-- Header Logo Start -->
+                        <div class="col-md-6 col-lg-3 col-xl-2 col-6">
+                            <div class="header-logo">
+                                <a href="index.html"><img src="assets/images/logo/logo.webp" alt="Site Logo" /></a>
+                            </div>
+                        </div>
+                        <!-- Header Logo End -->
+                        <!-- Header Menu Start -->
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="main-menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="brands.html">Shop By Brand</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Header Menu End -->
+                        <!-- Header Action Start -->
+                        <div class="col-md-6 col-lg-3 col-xl-4 col-6 justify-content-end">
+                            <div class="header-actions">
+                                <a
+                                    href="javascript:void(0)"
+                                    class="header-action-btn header-action-btn-search d-none d-lg-block"><i class="pe-7s-search"></i></a>
+
+                                <div class="dropdown-user d-none d-lg-block">
+                                    <a href="javascript:void(0)" class="header-action-btn"><i class="pe-7s-user"></i></a>
+                                    <ul class="dropdown-menu-user">
+                                        <li class="notLoggedIn"><a class="dropdown-item" href="/login.html">Sign in</a></li>
+                                        <li class="notLoggedIn">
+                                            <a class="dropdown-item" href="/signup.html">Create Account</a>
+                                        </li>
+                                        <li class="isLoggedIn">
+                                            <a class="dropdown-item" href="/account.html">My Account</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a
+                                    href="wishlist.html"
+                                    class="header-action-btn header-action-btn-wishlist">
+                                    <i class="pe-7s-like"></i>
+                                    <span class="header-action-num">10</span>
+                                </a>
+                                <a
+                                    href="javascript:void(0)"
+                                    class="header-action-btn header-action-btn-cart">
+                                    <i class="pe-7s-cart"></i>
+                                    <span class="header-action-num" id="cartCount"></span>
+                                </a>
+                                <!-- Mobile Menu Hambarger Action Button Start -->
+                                <a
+                                    href="javascript:void(0)"
+                                    class="header-action-btn header-action-btn-menu d-lg-none d-md-block">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                                <!-- Mobile Menu Hambarger Action Button End -->
+                            </div>
+                        </div>
+                        <!-- Header Action End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Bottom Ends -->
+
+        <!-- Offcanvas Search Start -->
+        <div class="offcanvas-search">
+            <div class="offcanvas-search-inner">
+                <!-- Button Close Start -->
+                <div class="offcanvas-btn-close">
+                    <i class="pe-7s-close"></i>
+                </div>
+                <!-- Button Close End -->
+
+                <!-- Offcanvas Search Form Start -->
+                <form class="offcanvas-search-form" action="#">
+                    <input
+                        type="text"
+                        placeholder="Search Product..."
+                        class="offcanvas-search-input" />
+                </form>
+                <!-- Offcanvas Search Form End -->
+            </div>
+        </div>
+        <!-- Offcanvas Search End -->
+        <!-- Cart Offcanvas Start -->
+        <div class="cart-offcanvas-wrapper">
+            <div class="offcanvas-overlay"></div>
+
+            <!-- Cart Offcanvas Inner Start -->
+            <div class="cart-offcanvas-inner">
+                <!-- Button Close Start -->
+                <div class="offcanvas-btn-close">
+                    <i class="pe-7s-close"></i>
+                </div>
+                <!-- Button Close End -->
+
+                <!-- Offcanvas Cart Content Start -->
+                <div class="offcanvas-cart-content" id="cartList">
+                    <!-- Cart items will be inserted here by displayCartItems function -->
+
+                    <!--------------------------------------------------------------------------------------------->
+                  
+                </div>
+                <!-- Offcanvas Cart Content End -->
+            </div>
+            <!-- Cart Offcanvas Inner End -->
+        </div>
+        <!-- Cart Offcanvas End -->
+
+        <!-- Toast Notification -->
+        <div aria-live="polite" aria-atomic="true" class="position-relative">
+            <div class="toast-container position-fixed top-0 end-0 p-3" id="toast-container">
+                <div id="cartToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            Added to cart!
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A Toast notification -->
+    </div>
+    <!-- Header Section End -->
+<!-- Hero/Intro Slider Start -->
+<div class="section">
+  <div class="hero-slider swiper-container">
+    <div class="swiper-wrapper">
+      <div class="hero-slide-item swiper-slide">
+        <div class="hero-slide-bg">
+          <img src="assets/images/sliders/slider1-1.webp" alt="Slider Image" />
+        </div>
+        <div class="container">
+          <div class="hero-slide-content">
+            <h2 class="title m-0 text-white">Get -30% off</h2>
+            <p>Latest baby product & toy collections.</p>
+            <a href="shop.html" id="cartBtn" class="btn btn-primary btn-hover-light">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slide-item swiper-slide">
+        <div class="hero-slide-bg">
+          <img src="assets/images/sliders/slider1-2.webp" alt="Slider Image" />
+        </div>
+        <div class="container">
+          <div class="hero-slide-content">
+            <h2 class="title m-0 text-dark">
+              New Arrivals <br />Get flat 50% off
+            </h2>
+            <a href="shop.html" class="btn btn-primary btn-hover-light">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper Pagination Start -->
+    <div class="swiper-pagination d-lg-none"></div>
+    <!-- Swiper Pagination End -->
+
+    <!-- Swiper Navigation Start -->
+    <div
+      class="home-slider-prev swiper-button-prev main-slider-nav d-lg-flex d-none">
+      <i class="pe-7s-angle-left text-white"></i>
+    </div>
+    <div
+      class="home-slider-next swiper-button-next main-slider-nav d-lg-flex d-none">
+      <i class="pe-7s-angle-right text-white"></i>
+    </div>
+    <!-- Swiper Navigation End -->
+  </div>
+</div>
+<!-- Hero/Intro Slider End -->
+<!--Category Carousel Start -->
+<div class="section section-padding">
+  <!-- Section Title & Tab Start -->
+  <div class="row mb-lg-8 mb-6">
+    <!-- Section Title Start -->
+    <div class="col-lg col-12">
+      <div
+        class="section-title mb-0 text-center"
+        data-aos="fade-up"
+        data-aos-delay="400">
+        <h2 class="title mb-2">Shop By Category</h2>
+      </div>
+    </div>
+    <!-- Section Title End -->
+  </div>
+  <!-- Section Title & Tab End -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="product-banner-carousel">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="200">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/accessories.png"
+                        alt="Category Accessories" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Accessories</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="300">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/stroller.png"
+                        alt="Category stroller" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Strollers</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="400">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/bag.png"
+                        alt="Category Bag" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Bags & Backpacks</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="500">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/cradle.png"
+                        alt="Category Walkers" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Beddings</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/clothes.png"
+                        alt="Category clothes" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Clothing</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- Next -->
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/babyfood.png"
+                        alt="Category Food" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Baby Food</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/baby-shoes.png"
+                        alt="Category footwear" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Footwears</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/carseat.png"
+                        alt="Category carseat" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Car Seats</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/mother.png"
+                        alt="Category clothes" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Maternity</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- Next -->
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/stroller.png"
+                        alt="Category Strollers" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Strollers</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/diaper.png"
+                        alt="Category Diapers" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Diapers</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/cosmetics.png"
+                        alt="Category Cosmetics" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Cosmetics</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/wardrobe.png"
+                        alt="Category wardrobe" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Baby Wardrobes</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/toys.png"
+                        alt="Category Toys" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Kids Toys</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="single-product-banner"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="banner-img">
+                    <a href="shop.html"><img
+                        src="assets/images/categories/baby-walkers.png"
+                        alt="Category walkers" /></a>
+                  </div>
+                  <div class="single-banner-content">
+                    <h4 class="title">
+                      <a href="shop.html">Baby Walkers</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Category Carousel End -->
+
+<!-- Product Section Start -->
+<div class="section position-relative">
+  <div class="container">
+    <!-- Section Title & Tab Start -->
+    <div class="row mb-lg-8 mb-6">
+      <!-- Section Title Start -->
+      <div class="col-lg col-12">
+        <div
+          class="section-title mb-0 text-center"
+          data-aos="fade-up"
+          data-aos-delay="400">
+          <h2 class="title mb-2">Top Selling</h2>
+        </div>
+      </div>
+      <!-- Section Title End -->
+    </div>
+    <!-- Section Title & Tab End -->
+    <div class="product-carousel arrow-outside-container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper" id="topSalesProductList">
+
+        </div>
+        <div class="swiper-pagination d-block d-md-none"></div>
+        <div class="swiper-button-prev swiper-nav-button d-none d-md-flex">
+          <i class="pe-7s-angle-left"></i>
+        </div>
+        <div class="swiper-button-next swiper-nav-button d-none d-md-flex">
+          <i class="pe-7s-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Product Section End -->
+<!-- Banner Section Start -->
+<div class="section section-margin">
+  <div class="container">
+    <!-- Banners Start -->
+    <div class="row mb-n6">
+      <!-- Banner Start -->
+      <div class="col-md-6 col-12 mb-6 pe-lg-2 pe-md-3">
+        <a
+          href="shop.html"
+          class="banner"
+          data-aos="fade-up"
+          data-aos-delay="200">
+          <img src="assets/images/banners/banner-1.jpg" alt="Banner Image" />
+        </a>
+      </div>
+      <!-- Banner End -->
+
+      <!-- Banner Start -->
+      <div class="col-md-6 col-12 mb-6 ps-lg-2 ps-md-3">
+        <a
+          href="shop.html"
+          class="banner"
+          data-aos="fade-up"
+          data-aos-delay="400">
+          <img src="assets/images/banners/banner-2.jpg" alt="Banner Image" />
+        </a>
+      </div>
+      <!-- Banner End -->
+    </div>
+    <!-- Banners End -->
+  </div>
+</div>
+<!-- Banner Section End -->
+<!-- Essentials Product Section Start -->
+<div class="section position-relative">
+  <div class="container">
+    <!-- Section Title & Tab Start -->
+    <div class="row mb-lg-8 mb-6">
+      <!-- Section Title Start -->
+      <div class="col-lg col-12">
+        <div
+          class="section-title mb-0 text-center"
+          data-aos="fade-up"
+          data-aos-delay="400">
+          <h2 class="title mb-2">Shop The Essentials</h2>
+        </div>
+      </div>
+      <!-- Section Title End -->
+    </div>
+    <!-- Section Title & Tab End -->
+    <div class="product-carousel arrow-outside-container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Product Start -->
+          <div class="swiper-slide">
+            <div class="product-wrapper">
+              <div class="product">
+                <div class="thumb border-0">
+                  <a href="single-product.html" class="image">
+                    <img
+                      class="fit-image"
+                      src="assets/images/products/584g.jpg"
+                      alt="Product" />
+                    <img
+                      class="second-image fit-image"
+                      src="assets/images/products/584g.jpg"
+                      alt="Product" />
+                  </a>
+                  <span class="badges">
+                    <span class="sale">-18%</span>
+                  </span>
+                  <div class="actions">
+                    <a href="wishlist.html" class="action wishlist"><i class="pe-7s-like"></i></a>
+                    <a href="compare.html" class="action compare"><i class="pe-7s-refresh-2"></i></a>
+                    <a
+                      href="#"
+                      class="action quickview"
+                      data-bs-toggle="modal"
+                      data-bs-target="#quick-view"><i class="pe-7s-search"></i></a>
+                  </div>
+                  <div class="add-cart-btn">
+                    <button
+                      class="btn btn-whited btn-hover-primary text-capitalize add-to-cart">
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5 class="title">
+                    <a href="single-product.html">Similac 360 Total Care 585g</a>
+                  </h5>
+                  <span class="price">
+                    <span class="new"> GHS 750 </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product End -->
+          <!-- Product Start -->
+          <div class="swiper-slide">
+            <div class="product-wrapper">
+              <div class="product">
+                <div class="thumb border-0">
+                  <a href="single-product.html" class="image">
+                    <img
+                      class="fit-image"
+                      src="assets/images/products/PRINGLES-CHEDDAR-CHEESE-21G.jpg"
+                      alt="Product" />
+                    <img
+                      class="second-image fit-image"
+                      src="assets/images/products/PRINGLES-CHEDDAR-CHEESE-21G.jpg"
+                      alt="Product" />
+                  </a>
+                  <span class="badges"> </span>
+                  <div class="actions">
+                    <a href="wishlist.html" class="action wishlist"><i class="pe-7s-like"></i></a>
+                    <a href="compare.html" class="action compare"><i class="pe-7s-refresh-2"></i></a>
+                    <a
+                      href="#"
+                      class="action quickview"
+                      data-bs-toggle="modal"
+                      data-bs-target="#quick-view"><i class="pe-7s-search"></i></a>
+                  </div>
+                  <div class="add-cart-btn">
+                    <button
+                      class="btn btn-whited btn-hover-primary text-capitalize add-to-cart">
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5 class="title">
+                    <a href="single-product.html">PRINGLES CHEDDAR CHEESE 21G</a>
+                  </h5>
+                  <span class="price">
+                    <span class="new"> GHS 27 </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product End -->
+          <!-- Product Start -->
+          <div class="swiper-slide">
+            <div class="product-wrapper">
+              <div class="product">
+                <div class="thumb border-0">
+                  <a href="single-product.html" class="image">
+                    <img
+                      class="fit-image"
+                      src="assets/images/products/92812_right_669x669.jpg"
+                      alt="Product" />
+                    <img
+                      class="second-image fit-image"
+                      src="assets/images/products/92812_right_669x669.jpg"
+                      alt="Product" />
+                  </a>
+                  <span class="badges"> </span>
+                  <div class="actions">
+                    <a href="wishlist.html" class="action wishlist"><i class="pe-7s-like"></i></a>
+                    <a href="compare.html" class="action compare"><i class="pe-7s-refresh-2"></i></a>
+                    <a
+                      href="#"
+                      class="action quickview"
+                      data-bs-toggle="modal"
+                      data-bs-target="#quick-view"><i class="pe-7s-search"></i></a>
+                  </div>
+                  <div class="add-cart-btn">
+                    <button
+                      class="btn btn-whited btn-hover-primary text-capitalize add-to-cart">
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5 class="title">
+                    <a href="single-product.html">Oxo Tot Diaper Bag</a>
+                  </h5>
+                  <span class="price">
+                    <span class="new"> GHS 650 </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product End -->
+          <!-- Product Start -->
+          <div class="swiper-slide">
+            <div class="product-wrapper">
+              <div class="product">
+                <div class="thumb border-0">
+                  <a href="single-product.html" class="image">
+                    <img
+                      class="fit-image"
+                      src="assets/images/products/urxone.jpeg"
+                      alt="Product" />
+                    <img
+                      class="second-image fit-image"
+                      src="assets/images/products/urxone.jpeg"
+                      alt="Product" />
+                  </a>
+                  <span class="badges"> </span>
+                  <div class="actions">
+                    <a href="wishlist.html" class="action wishlist"><i class="pe-7s-like"></i></a>
+                    <a href="compare.html" class="action compare"><i class="pe-7s-refresh-2"></i></a>
+                    <a
+                      href="#"
+                      class="action quickview"
+                      data-bs-toggle="modal"
+                      data-bs-target="#quick-view"><i class="pe-7s-search"></i></a>
+                  </div>
+                  <div class="add-cart-btn">
+                    <button
+                      class="btn btn-whited btn-hover-primary text-capitalize add-to-cart">
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5 class="title">
+                    <a href="single-product.html">Yoir Zone 21 Pack Bowls</a>
+                  </h5>
+                  <span class="price">
+                    <span class="new"> GHS 250 </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product End -->
+        </div>
+        <div class="swiper-pagination d-block d-md-none"></div>
+        <div class="swiper-button-prev swiper-nav-button d-none d-md-flex">
+          <i class="pe-7s-angle-left"></i>
+        </div>
+        <div class="swiper-button-next swiper-nav-button d-none d-md-flex">
+          <i class="pe-7s-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Essentials Product Section End -->
+
+<!-- On Sale Products Starts -->
+<!-- Product List Banner Section Start -->
+<div class="section mt-10">
+  <div class="container">
+    <!-- Section Title Start -->
+    <div
+      class="section-title text-center"
+      data-aos="fade-up"
+      data-aos-delay="400">
+      <h2 class="title">On-Sale Product</h2>
+      <p class="sub-title">Check out on-sale Producs</p>
+    </div>
+    <!-- Section Title End -->
+    <div class="row" id="allSaleProductsList">
+
+    </div>
+  </div>
+  <!-- On Sale Products End -->
+
+  <!-- Brand Logo Section Start -->
+  <div class="section section-margin">
+    <div
+      class="section-title mb-0 text-center"
+      data-aos="fade-up"
+      data-aos-delay="400">
+      <h2 class="title mb-2">Our Favourite Brands</h2>
+    </div>
+    <div class="container">
+      <div class="border-top border-bottom">
+        <div class="row">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <!-- Brand Logo Wrapper Start -->
+            <div class="brand-logo-carousel arrow-outside-container">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <!-- Single Brand Logo Start -->
+                  <div class="swiper-slide single-brand-logo">
+                    <a href="#"><img
+                        src="assets/images/brands/huggies.jpg"
+                        alt="Brand Logo" /></a>
+                  </div>
+                  <!-- Single Brand Logo End -->
+
+                  <!-- Single Brand Logo Start -->
+                  <div class="swiper-slide single-brand-logo">
+                    <a href="#"><img
+                        src="assets/images/brands/johnsons.jpg"
+                        alt="Brand Logo" /></a>
+                  </div>
+                  <!-- Single Brand Logo End -->
+
+                  <!-- Single Brand Logo Start -->
+                  <div class="swiper-slide single-brand-logo">
+                    <a href="#"><img
+                        src="assets/images/brands/nano_bebe.jpg"
+                        alt="Brand Logo" /></a>
+                  </div>
+                  <!-- Single Brand Logo End -->
+
+                  <!-- Single Brand Logo Start -->
+                  <div class="swiper-slide single-brand-logo">
+                    <a href="#"><img
+                        src="assets/images/brands/nestle.jpg"
+                        alt="Brand Logo" /></a>
+                  </div>
+                  <!-- Single Brand Logo End -->
+
+                  <!-- Single Brand Logo Start -->
+                  <div class="swiper-slide single-brand-logo">
+                    <a href="#"><img src="assets/images/brands/nuk.jpg" alt="Brand Logo" /></a>
+                  </div>
+                  <!-- Single Brand Logo End -->
+
+                  <!-- Single Brand Logo Start -->
+                  <div class="swiper-slide single-brand-logo">
+                    <a href="#"><img
+                        src="assets/images/brands/pampers.jpg"
+                        alt="Brand Logo" /></a>
+                  </div>
+                  <!-- Single Brand Logo End -->
+                  <!-- Single Brand Logo Start -->
+                  <div class="swiper-slide single-brand-logo">
+                    <a href="#"><img
+                        src="assets/images/brands/purity.jpg"
+                        alt="Brand Logo" /></a>
+                  </div>
+                  <!-- Single Brand Logo End -->
+                  <!-- Single Brand Logo Start -->
+                  <div class="swiper-slide single-brand-logo">
+                    <a href="#"><img
+                        src="assets/images/brands/snuggletime.jpg"
+                        alt="Brand Logo" /></a>
+                  </div>
+                  <!-- Single Brand Logo End -->
+                  <!-- Single Brand Logo Start -->
+                  <div class="swiper-slide single-brand-logo">
+                    <a href="#"><img
+                        src="assets/images/brands/tomee_tippee.jpg"
+                        alt="Brand Logo" /></a>
+                  </div>
+                  <!-- Single Brand Logo End -->
+                </div>
+
+                <!-- Swiper Pagination Start -->
+                <div class="swiper-pagination d-none"></div>
+                <!-- Swiper Pagination End -->
+
+                <!-- Next Previous Button Start -->
+                <div
+                  class="swiper-logo-button-next swiper-button-next swiper-nav-button d-none d-md-flex">
+                  <i class="pe-7s-angle-right"></i>
+                </div>
+                <div
+                  class="swiper-logo-button-prev swiper-button-prev swiper-nav-button d-none d-md-flex">
+                  <i class="pe-7s-angle-left"></i>
+                </div>
+                <!-- Next Previous Button End -->
+              </div>
+            </div>
+            <!-- Brand Logo Wrapper End -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Brand Logo Section End -->
+</div>
+<!-- Footer Section Start -->
+<footer class="section footer-section">
+  <!-- Footer Top Start -->
+  <div class="footer-top bg-primary section-padding">
+      <div class="container">
+          <div class="row mb-n8">
+              <div class="col-12 col-sm-6 col-lg-3 mb-8">
+                  <div class="single-footer-widget">
+                      <h1 class="widget-title">About Us</h1>
+                      <p class="desc-content">We provide you with quality products from countries like Canada,USA,UK</p>
+                      <!-- Soclial Link Start -->
+                      <div class="widget-social justify-content-start mb-n2">
+                          <a title="Facebook" href="#"><i class="fa fa-facebook-f"></i></a>
+                          <a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                          <a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                          <a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+
+                      </div>
+                      <!-- Social Link End -->
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3 mb-8">
+                  <div class="single-footer-widget">
+                      <h2 class="widget-title">Contact Us</h2>
+                      <ul class="contact-links">
+                          <li><i class="pe-7s-home"></i> <span>Kumasi Santasi</span> </li>
+                          <li><i class="pe-7s-mail"></i><a href="#"> info@deebee.com</a></li>
+                          <li><i class="pe-7s-call"></i><a href="#"> +233 3456 789</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3 mb-8">
+                  <div class="single-footer-widget aos-init aos-animate">
+                      <h2 class="widget-title">Legal</h2>
+                      <ul class="widget-list">
+                          <li><a href="contact.html">Terms & Conditions</a></li>
+                          <li><a href="contact.html">Payment Methods</a></li>
+                          <li><a href="contact.html">Product Warranty</a></li>
+                          <li><a href="contact.html">Return Process</a></li>
+                          <li><a href="contact.html">Payment Security</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3 mb-8">
+                  <div class="single-footer-widget">
+                      <h2 class="widget-title">Signup for newsletter</h2>
+                      <div class="widget-body">
+                          <!-- Newsletter Form Start -->
+                          <div class="newsletter-form-wrap pt-1">
+                              <form id="mc-form" class="mc-form">
+                                  <input type="email" id="mc-email" class="form-control email-box mb-4" placeholder="demo@example.com" name="EMAIL">
+                                  <button id="mc-submit" class="newsletter-btn" type="submit">Subscribe</button>
+                              </form>
+                              <!-- mailchimp-alerts Start -->
+                              <div class="mailchimp-alerts text-centre">
+                                  <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                  <div class="mailchimp-success text-success"></div><!-- mailchimp-success end -->
+                                  <div class="mailchimp-error text-danger"></div><!-- mailchimp-error end -->
+                              </div>
+                              <!-- mailchimp-alerts end -->
+                          </div>
+                          <!-- Newsletter Form End -->
+                          <p class="desc-content mb-0">Join over 1,000 people who get free and fresh content delivered automatically each time we publish</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Footer Top End -->
+
+  <!-- Footer Bottom Start -->
+  <div class="footer-bottom bg-secondary pt-4 pb-4">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-12 text-center">
+                  <div class="copyright-content">
+                      <p class="mb-0">&copy; 2024 Softnage - All Rights Reserved</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Footer Bottom End -->
+</footer>
+<!-- Footer Section End -->
+
+
+<!-- Mobile Menu Start -->
+<div class="mobile-menu-wrapper">
+  <div class="offcanvas-overlay"></div>
+
+  <!-- Mobile Menu Inner Start -->
+  <div class="mobile-menu-inner">
+
+      <!-- Button Close Start -->
+      <div class="offcanvas-btn-close">
+          <i class="pe-7s-close"></i>
+      </div>
+      <!-- Button Close End -->
+
+      <!-- Mobile Menu Inner Wrapper Start -->
+      <div class="mobile-menu-inner-wrapper">
+          <!-- Mobile Menu Search Box Start -->
+          <div class="search-box-offcanvas">
+              <form>
+                  <input class="search-input-offcanvas" type="text" placeholder="Search product...">
+                  <button class="search-btn"><i class="pe-7s-search"></i></button>
+              </form>
+          </div>
+          <!-- Mobile Menu Search Box End -->
+
+          <!-- Mobile Menu Start -->
+          <div class="mobile-navigation">
+              <nav>
+                  <ul class="mobile-menu">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="shop.html">Shop</a></li>
+                      <li><a href="brands.html">Shop By Brand</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <!-- Mobile Menu End -->
+
+          <!-- Language, Currency & Link Start -->
+          <div class="offcanvas-lag-curr mb-6">
+              <div class="header-top-lan-curr-link">
+                  <div class="header-top-lan dropdown">
+                      <h4 class="title">Profile:</h4>
+                      <button class="dropdown-toggle" data-bs-toggle="dropdown">Account <i class="fa fa-angle-down"></i></button>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a class="dropdown-item" href="#">Login</a></li>
+                          <li><a class="dropdown-item" href="#">Create Account</a></li>
+
+                      </ul>
+                  </div>
+
+              </div>
+          </div>
+          <!-- Account, Currency & Link End -->
+
+          <!-- Contact Links/Social Links Start -->
+          <div class="mt-auto bottom-0">
+
+              <!-- Contact Links Start -->
+              <ul class="contact-links">
+                  <li><i class="fa fa-phone"></i><a href="#"> +233 3456 789</a></li>
+                  <li><i class="fa fa-envelope-o"></i><a href="#"> info@deebee.com</a></li>
+                  <li><i class="fa fa-clock-o"></i> <span>Monday - Sunday 7:30 am - 8:00 pm</span> </li>
+              </ul>
+              <!-- Contact Links End -->
+
+              <!-- Social Widget Start -->
+              <div class="widget-social">
+                  <a title="Facebook" href="#"><i class="fa fa-facebook-f"></i></a>
+                  <a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                  <a title="Linkedin" href="#"><i class="fa fa-tiktok"></i></a>
+                  <a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+                  <a title="Vimeo" href="#"><i class="fab fa-tiktok"></i></a>
+              </div>
+              <!-- Social Widget Ende -->
+          </div>
+          <!-- Contact Links/Social Links End -->
+      </div>
+      <!-- Mobile Menu Inner Wrapper End -->
+
+  </div>
+  <!-- Mobile Menu Inner End -->
+</div>
+<!-- Mobile Menu End -->
+<script src="/assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="/assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
+<!-- Plugins JS -->
+
+<script src="/assets/js/plugins/aos.min.js"></script>
+<script src="/assets/js/plugins/jquery.ajaxchimp.min.js"></script>
+<script src="/assets/js/plugins/jquery-ui.min.js"></script>
+<script src="/assets/js/plugins/nice-select.min.js"></script>
+<script src="/assets/js/plugins/swiper-bundle.min.js"></script>
+<script src="/assets/js/plugins/countdown.min.js"></script>
+<script src="/assets/js/plugins/lightgallery-all.min.js"></script>
+<script src="/assets/js/quill.min.js"></script>
+<!--Main JS-->
+
+<script src="/dist/bundle.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+
+</html>
