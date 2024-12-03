@@ -7,9 +7,10 @@
   "scripts": {
     "generate-products": "node scripts/generate-product-pages.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --mode production --config webpack.config.cjs",
-    "webpack:dev": "webpack --mode development --watch --config webpack.config.cjs",
-    "build": "npm run generate-products && npm run webpack && npm run build"
+    "build": "npm run generate-products && webpack",
+    "predeploy": "npm run build",
+    "dev": "npm run generate-products && webpack --watch",
+    "start": "npm run dev"
   },
   "keywords": [],
   "author": "",
