@@ -6,10 +6,11 @@
   "type": "module",
   "scripts": {
     "generate-products": "node scripts/generate-product-pages.js",
+    "webpack": "webpack --mode production --config webpack.config.cjs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run generate-products && webpack",
+    "build": "npm install && npm run generate-products && npm run webpack",
     "predeploy": "npm run build",
-    "dev": "npm run generate-products && webpack --watch",
+    "dev": "npm run generate-products && webpack --watch --config webpack.config.cjs",
     "start": "npm run dev"
   },
   "keywords": [],
@@ -20,10 +21,10 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "firebase": "^11.0.2",
+    "dotenv": "^16.4.5",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.1",
-    "dotenv": "^16.4.5",
-    "firebase": "^11.0.2",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
     "process": "^0.11.10",
